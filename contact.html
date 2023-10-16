@@ -72,11 +72,11 @@
             </div>  
         </div>
         <div class="contact-col">
-            <form onsubmit="sendEmail(); reset(); return false" >
-              <input type="text" name="Name" placeholder="Enter Your Name" required>
-                <input type="email" name="Email" placeholder="Enter Your Email" required>
-                
-               <textarea  rows="8" name="Message" placeholder="Message" required></textarea>
+            <form  action="springform.php" method="post" >
+              <input type="text" name="Name" placeholder="Enter Your Name"  id="name"  required >
+                <input type="email" name="Email" placeholder="Enter Your Email" id="email" required>
+                <input type="tel" name="tel"placeholder="Phone Number" id="phone" required>
+               <textarea  rows="8" name="Message" placeholder="Message" id="Message" required></textarea>
                 <button type="submit" class="btn"> Send Massege</button>
 
             </form>
@@ -84,6 +84,16 @@
         </div>
     </div>
   </section>
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -117,22 +127,7 @@
 
   }
 </script>
-<script src="https://smtpjs.com/v3/smtp.js"></script>
-<script>
-  function sendEmail(){
-              Email.send({
-              Host : "smtp.gmail.com",
-              Username : "tahseenk2003@gmail.com",
-              Password : "spring@2003",
-              To : 'tk9125719455@gmail.com',
-              From : document.getElementById("email").value,
-              Subject : "New Contact Form Inquiry",
-              Body : "And this is the body"
-          }).then(
-            message => alert(message)
-          );
-  }
-</script>
+
    
 </body>
 </html>
