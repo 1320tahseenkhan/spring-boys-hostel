@@ -72,7 +72,7 @@
             </div>  
         </div>
         <div class="contact-col">
-            <form action="https://formsubmit.co/el/confirm/72071b34bb10116a06deaaa2d09e020c" method="POST">
+            <form onsubmit="sendEmail(); reset(); return false" >
               <input type="text" name="Name" placeholder="Enter Your Name" required>
                 <input type="email" name="Email" placeholder="Enter Your Email" required>
                 
@@ -115,6 +115,22 @@
   function hideMenu(){
     navlinks.style.left="-300px";
 
+  }
+</script>
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+<script>
+  function sendEmail(){
+              Email.send({
+              Host : "smtp.gmail.com",
+              Username : "tahseenk2003@gmail.com",
+              Password : "spring@2003",
+              To : 'tk9125719455@gmail.com',
+              From : document.getElementById("email").value,
+              Subject : "New Contact Form Inquiry",
+              Body : "And this is the body"
+          }).then(
+            message => alert(message)
+          );
   }
 </script>
    
