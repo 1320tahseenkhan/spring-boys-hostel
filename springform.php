@@ -1,24 +1,18 @@
 <?php
-$name = $_POST['name'];
-$visitor_email = $_POST['email'];
-$message = $_POST['message'];
+//getting data from php form
+$name = $POST['name'];
+$email= $POST['email'];
+$tel = $POST['tel'];
 
- $email_from ='springboyshostel@gmail.com';
-
- $email_subject ='New Form Submission';
-
- $email_body ="User name : $name.\n". 
-                "User name : $visitor_email.\n".
-                "User name : $message.\n"; 
-
-
-
-  $to ='springboyshostel@gmail.com'; 
-  $headers ="From:$email_from \r\n";   
-  $headers ="Reply-to: $visitor_email \r\n";
-  
-  mail( $to,$email_subject, $email_body, $headers);
-  header("Location:contact.html")
-
-
-?> 
+$message= $_POST['message'];
+$to = "tahseenk2003@gmail.com";
+$subject = "Mail From springboyshostel";
+$txt ="name". $name . "\r\nEmail= " . $email ."\r\Mobile Number= " . $tel . "\r\n Message =" . $message;
+$headers = "From: noreply@springboyshostel@gmail.com" . "\r\n" .
+"CC: somebodyelse@example.com";
+if($email!=NULL){
+mail($to,$subject,$txt,$headers);
+}
+//redirect to thank you page
+header("Location:thankyou.html");
+?>
