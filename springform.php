@@ -9,7 +9,7 @@ $to = "tahseenk2003@gmail.com";
 $subject = "Mail From springboyshostel";
 $txt ="name". $name . "\r\nEmail= " . $email ."\r\Mobile Number= " . $tel . "\r\n Message =" . $message;
 $headers = "From: noreply@springboyshostel@gmail.com" . "\r\n" .
-"CC: somebodyelse@example.com";
+"CC: somebodyelse@springboyshostel-pi.vercel.app";
 if($email!=NULL){
 mail($to,$subject,$txt,$headers);
 }
