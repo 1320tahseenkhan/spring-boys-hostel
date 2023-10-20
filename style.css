@@ -127,7 +127,7 @@ nav .fa{
 .faccol{
    border: #45505b;
    background-color: #d7e2e1e0;
-   flex-basis: 11%;
+   flex-basis: 10%;
    border-radius: 10px;
    margin-bottom: 15px;
    text-align: left;
@@ -202,12 +202,34 @@ nav .fa{
    }
    /* this is for prefrence */
    .row{
-      flex-direction:column;
+      flex-direction:column
    }
 
    .about p{
       text-align: center;
+      font-size: 30px;
    }
+
+ 
+   .faccol {
+     
+      margin-top:30px;
+      margin-bottom: 30px;
+      margin-left: 30px;
+      margin-right: 30px;
+   }
+   .faccol h4{
+      font-size: 20px;
+   }
+
+   .brancol{
+      margin-top:30px;
+      margin-bottom: 30px;
+      margin-left: 20px;
+      margin-right: 20px;
+
+   }
+  
 }
 
 
@@ -277,6 +299,31 @@ nav .fa{
    .about p{
       text-align: center;
    }
+   
+   .about p{
+      text-align: center;
+      font-size: 30px;
+   }
+
+ 
+   .faccol {
+     
+      margin-top:20px;
+      margin-bottom: 20px;
+      margin-left: 20px;
+      margin-right: 20px;
+   }
+   .faccol h4{
+      font-size: 20px;
+   }
+
+   .brancol{
+      margin-top:20px;
+      margin-bottom: 20px;
+      margin-left: 20px;
+      margin-right: 20px;
+
+   }
 }
 /* monile media query end  */
 
@@ -325,32 +372,22 @@ li{
    margin: auto;
    text-align: center;
    padding-top: 30px;
-   left: 0;
-   right: 20px;
-   
-}
-.ourbranches .row{
- 
   
-   margin: 2%;
-   display:flex;
-   justify-content: space-between ;
-   
+    
 }
+
 .brancol{
-   flex-basis: 32%;
+   flex-basis: 22%;
    border-radius: 10px;
    margin-bottom: 30px;
    position: relative;
    overflow: hidden;
-   margin-left: 0px;
-    margin-right: 35px;
+   
 }
 .brancol img{
  
    width: 100%;
-   /* /* padding-left: 0px; */
-   margin: 20px; 
+ 
 }
 .brancol:hover{
    transform: scale(1.1);
@@ -358,22 +395,24 @@ li{
 .layer{
   
    background: transparent;
-   height:92%;
+   height:100%;
    width: 100%;
    position: absolute;
-   top: 18px;
-   left: 20px;
+   top: 0;
+   left: 0;
+   transition: 0.5s;
 }
 .layer:hover{
    background: rgba(3, 212, 212, 0.448);
 }
 .layer  h3{
+   text-align: center;
    width: 100%;
    font-weight: 500;
    color: #fff;
    font-size: 26px;
    bottom: 0;
-   left: 45%;
+   left: 50%;
    transform: translateX(-50%);
    position: absolute;
    opacity: 0;
@@ -381,12 +420,13 @@ li{
   
 }
 .layer  h2{
+   text-align: center;
    width: 100%;
    font-weight: 500;
    color: #fff;
    font-size: 40px;
    bottom: 0;
-   left: 45%;
+   left: 50%;
    transform: translateX(-50%);
    position: absolute;
    opacity: 0;
@@ -417,29 +457,22 @@ opacity: 1;
    /* about start  */
    .about{
       align-items: center;
-      width: 100%;
+      width: 90%;
       padding-top: 30px;
       margin-top: 30px;
-     
-      text-align:center;
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+  }
 
       
 
-   }
-   .about .h1{
-      margin-bottom: 25px; 
-      margin-top: 20px;
-      font-weight: bold;
-      
-   } 
-   .about span{
-      box-sizing: border-box;
-      font-size: 18px;
-      margin-left: 30px;
-      margin-right: 30px;
+   
+
+   .about p{
       margin-top: 30px;
       margin-bottom: 30px;
-      
+      font-size: 20px;
       
    }
    /* about end  */
@@ -556,3 +589,6 @@ font-weight: 600;
    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
 
 }
+
+
+
