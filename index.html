@@ -1,592 +1,240 @@
-*{
-   margin: 0;
-   padding: 0;
-   font-family: 'Lora', serif;
-   
-   
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="images/SPRING.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@1,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<script src='https://widgets.sociablekit.com/google-reviews/widget.js' async defer></script>
+<title>Spring Boys Hostel</title>
+</head>
+<body>
 
-}
 
-/* this is for all h1 tag  */
-h1{
-   font-size: 30px;
-   font-weight: bold; 
-   text-transform: uppercase;
-   position: relative;
-   font-family: "Raleway", sans-serif;
-   color: #45505b;
-   
- }
- /* end  */
-
-.home{
-   min-height: 100vh;
-   width: 100%;
-   background-image:linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2)),url(images/background.png);
-   background-position: center;
-   background-size: cover;
-   position: relative;
-}
-nav{
-   position: fixed;
-   top: 0;
-   left: 0;
-   right: 0;
-   padding: 0rem 5%;
-   display: flex;
-   align-items: center;
-   z-index: 100;
-   list-style-type: none;
-   background-color:#28A58D;
-}
-nav img{
-   height: 130px;
-}
- 
-.navlinks{
-   flex: 1;
-   text-align: right;
-}
-.navlinks ul li{
+<section class="home" id="home">
+  <nav >
+  <a href="index.html"><img src="images/SPRING logo.png" alt=""></a>
+   <div class="navlinks" id="navlinks">
+    <i class="fa fa-times" onclick="hideMenu()"></i> 
+    <ul>
+        <li> <a href="index.html">Home</a></li>
+        <li><a href="#facilities">Facilities</a></li>
+        <li><a href="#ourbranches">Our Branches</a></li>
+        <li><a href="#testimonial">Testimonial</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#prefrence">Prefrence</a></li>
+        <li><a href="">About us</a></li>
+        <li> <a href="contact.html">Contact</a></li>
+    </ul>
+   </div>
+   <i class="fa fa-bars" id="toggle"       onclick="showMenu()"></i>
+</nav>
+<div class="textbox">
+    <h1>"Family Away From Family"</h1>
+    <p> If you want to walk fast, walk alone.. But if you want to walk far, walk Together</p>
+</div>
     
-   list-style: none;
-   display: inline-block;
-   padding: 8px 12px;
-   position: relative;
-}
-.navlinks ul li a{
-   font-family: 'Young Serif', serif;
-   
-   text-decoration: none;
-   color: #FFFFFF;
-   font-size: 24px;
-   margin-right: 10px;
-   margin-left: 10px;
-  
-}
-.navlinks ul li::after{
-   content:'';
-   width: 0%;
-   height:2px ;
-   background-color: aquamarine;
-   display: block;
-   margin: auto;
-   transition: 0.5s;
-}
-.navlinks ul li:hover::after{
-   width: 100%;
+</section>
+<section class="facilities" id="facilities">
+  <h1>Facilities</h1>
+  <div class="row">
+    <div class="faccol">
+       <img src="images/bedroom.png" alt="">
+       <h4>Bedroom</h4>
+       <p></p>
+    </div>
+    <div class="faccol">
+      <img src="images/washroom.png" alt="">
+      <h4>Washroom</h4>
+      <p></p>
+   </div>
+   <div class="faccol">
+    <img src="images/passage.png" alt="">
+    <h4>Shoe Rack</h4>
+    <p></p>
+ </div>
+ <div class="faccol">
+  <img src="images/ironing-area.png" alt="">
+  <h4>Ironing-area</h4>
+  <p></p>
+</div>
 
+<div class="faccol">
+  <img src="images/washing.png.png" alt="">
+  <h4>Washing Machine and Refrigretor </h4>
+  <p></p>
+</div>
+<div class="faccol">
+  <img src="images/multipurpose.png" alt="">
+  <h4>Multipurpose hall </h4>
+  <p></p>
+</div>
+<div class="faccol">
+  <img src="images/study-area.png" alt="">
+  <h4>Study Area </h4>
+  <p></p>
+</div>
+<div class="faccol">
+  <img src="images/wifi.png" alt="">
+  <h4>24/7 WiFi </h4>
+  <p></p>
+</div>
+  </div>
 
-}
-.navlinks ul li:hover::after{
-   width: 100%;
-}
-nav .fa{
-   display: none;
-}
-.textbox{
-   width: 90%;
-   color:#fff;
-   position: absolute;
-   top:50%;
-   left:50%;
-   transform: translate(-50%,-50%);
-  
-  }
-  .textbox h1{
-     font-size: 62px;
-     color: #6BE8D0;
-  }
-  .textbox p{
-     margin: 10px  40px;
-     font-size: 25px;
-     color: #fff;
-  }
-
-
-
-/* facilities start  */
-
-
-  .facilities{
-
-   width: 100%;
-   margin: auto;
-  text-align: center;
-  padding-top: 30px;
- 
-}
-
-.faccol:hover {
-   transform: scale(1.1); 
-   box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
-   
- }
-
-
-.faccol{
-   border: #45505b;
-   background-color: #d7e2e1e0;
-   flex-basis: 10%;
-   border-radius: 10px;
-   margin-bottom: 15px;
-   text-align: left;
-
-}
-.faccol img{
-   width: 100%;
-   border-radius: 10px 10px 0px 0px;
-   cursor: pointer;
-}
-.faccol h4{
-   text-align: center;
-}
-
-
-
-
-/* facilities end  */
-
-
-/* tablet media query  */
-  @media (max-width:1200px){
-   .textbox h1{
-      font-size: 24px;
-      color: #6BE8D0;
-      text-align: center;
-
-   }
-   .textbox p{
-      font-size: 15px;
-      color:white;
-      text-align: center;
-   }
-   nav{
-      position:fixed;
-   }
-   .navlinks ul li{
-      display: block;
-   }
-  
-
-   .navlinks{
-      display: block;
-      position: absolute;
-      background: #28A58D;
-      height: 92vh;
-      margin-top: 8em;
-      width: 300px;
-      top: 0;
-      left: -300px;
-      text-align: left;
-      z-index: 2;
-      
-   }
-  
-   nav .fa{
-      display: block;
-      color: #fff;
-      margin: 10px;
-      font-size: 20px;
-      cursor: pointer;
-   }
-   #toggle{
-      font-size:40px ;
-       margin-left:auto ;
-   }
-   h1{
-      font-size: 20px;
-   }
-   .navlinks ul{
-      padding: 30px;
-   }
-   /* this is for prefrence */
-   .row{
-      flex-direction:column
-   }
-
-   .about p{
-      text-align: center;
-      font-size: 30px;
-   }
-
- 
-   .faccol {
-     
-      margin-top:30px;
-      margin-bottom: 30px;
-      margin-left: 30px;
-      margin-right: 30px;
-   }
-   .faccol h4{
-      font-size: 20px;
-   }
-
-   .brancol{
-      margin-top:30px;
-      margin-bottom: 30px;
-      margin-left: 20px;
-      margin-right: 20px;
-
-   }
-  
-}
-
-
-
-/* tablet media query end  */
-
-
-
-  /* mobile media query start  */
-
-@media  (max-width:700px){
-   .textbox h1{
-      font-size: 24px;
-      color: #6BE8D0;
-      text-align: center;
-
-   }
-   .textbox p{
-      font-size: 15px;
-      color:white;
-      text-align: center;
-   }
-   nav{
-      position:fixed;
-   }
-   .navlinks ul li{
-      display: block;
-   }
-  
-
-   .navlinks{
-      display: block;
-      position: absolute;
-      background: #28A58D;
-      height: 92vh;
-      margin-top: 8em;
-      width: 300px;
-      top: 0;
-      left: -300px;
-      text-align: left;
-      z-index: 2;
-      
-   }
-  
-   nav .fa{
-      display: block;
-      color: #fff;
-      margin: 10px;
-      font-size: 20px;
-      cursor: pointer;
-   }
-   #toggle{
-      font-size:40px ;
-       margin-left:auto ;
-   }
-   h1{
-      font-size: 20px;
-   }
-   .navlinks ul{
-      padding: 30px;
-   }
-   /* this is for prefrence */
-   .row{
-      flex-direction:column;
-   }
-
-   .about p{
-      text-align: center;
-   }
-   
-   .about p{
-      text-align: center;
-      font-size: 30px;
-   }
-
- 
-   .faccol {
-     
-      margin-top:20px;
-      margin-bottom: 20px;
-      margin-left: 20px;
-      margin-right: 20px;
-   }
-   .faccol h4{
-      font-size: 20px;
-   }
-
-   .brancol{
-      margin-top:20px;
-      margin-bottom: 20px;
-      margin-left: 20px;
-      margin-right: 20px;
-
-   }
-}
-/* monile media query end  */
-
-/* .........prefrence........... */
-.Prefrence{
-
-   width: 100%;
-   margin: auto;
-   text-align: center;
-   padding-top: 30px;
-}
-
-
-
-.row{
-   margin: 5%;
-   display: flex;
-   justify-content: space-between ;
-}
-.pre-Col{
-   flex-basis: 31%;
-   background-color:#d7e2e1e0;
-   border-radius: 10px;
-   margin-bottom:5%;
-   padding: 20px 12px;
-   box-sizing: border-box;
-   transition: 0.5s;
-
-}
-h3{
-   text-align: center;
-   font-weight: 600;
-    margin: 10px 0;
-    font-size: 25px;
-}
-.pre-Col:hover{
-   box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
-}
-li{
-   list-style: none;
-   text-align: center;
-}
-/* ........our branches........ */
-.ourbranches{
-   width:100%;
-   margin: auto;
-   text-align: center;
-   padding-top: 30px;
-  
     
-}
+</section>
 
-.brancol{
-   flex-basis: 22%;
-   border-radius: 10px;
-   margin-bottom: 30px;
-   position: relative;
-   overflow: hidden;
+<!-- prefrence start -->
+<section class="Prefrence" id="prefrence">
+   <h1>Prefrence</h1>
+   <div class="row">
+    <div class="pre-Col">
+      <h3>4 Seater</h3>
+      <li>2 Bunkar Bed</li>
+      <li> Mattress & Pillow</li>
+      <li>Locker Two Block</li>
+      <li>Table & Chair</li>
+      <li>Study Area</li>
+      <li>WiFi with High Speed</li>
+      <li>Weekly Loundry Included</li>
+      <li>Self Ironing</li>
+      <li>RO Refrigretor</li>
+      <li>Neat & Clean Washroom common</li>
+      <li>Multipurpose Hall Common</li>
+      <li>Fully Carpet in Common Area</li>
+      <li>Shoe Rack</li>
+    </div>
+    <div class="pre-Col">
+      <h3>3 Seater</h3>
+      <li>2 Bunkar Bed</li>
+      <li> Mattress & Pillow</li>
+      <li>Locker One Block</li>
+      <li>Table & Chair</li>
+      <li>Study Area</li>
+      <li>WiFi with High Speed</li>
+      <li>Weekly Loundry Included</li>
+      <li>Self Ironing</li>
+      <li>RO Refrigretor</li>
+      <li>Neat & Clean Washroom common</li>
+      <li>Multipurpose Hall Common</li>
+      <li>Fully Carpet in Common Area</li>
+      <li>Shoe Rack</li>
+    </div>
+    <div class="pre-Col">
+      <h3>2 Seater</h3>
+      <ul>
+        <li>1 Bunkar Bed</li>
+        <li> Mattress & Pillow</li>
+        <li>Locker Two Block</li>
+        <li>Table & Chair</li>
+        <li>Study Area</li>
+        <li>WiFi with High Speed</li>
+        <li>Weekly Loundry Included</li>
+        <li>Self Ironing</li>
+        <li>RO Refrigretor</li>
+        <li>Neat & Clean Washroom common</li>
+        <li>Multipurpose Hall Common</li>
+        <li>Fully Carpet in Common Area</li>
+        <li>Shoe Rack</li>
+
+      </ul>
+    </div>
+   </div>
+</section>
+<!-- ------Our Branches------- -->
+
+<section class="ourbranches" id="ourbranches">
+  <h1>Our Branches</h1>
+  <div class="row">
+    <div class="brancol">
+     <img src="images/Harmony.png" alt="">
+      <div class="layer">
+         <a href="https://maps.app.goo.gl/VV9eKuSEU5MYXxF26" target="_blank"> <h2>Harmony Boys <br> Hostel</h2></a>
+          <h3>Banglore</h3>
+      </div>
+    </div>
+    <div class="brancol">
+      <img src="images/Shibli.png" alt="">
+      <div class="layer">
+         <a href="https://maps.app.goo.gl/EKwZPGGTvzKfBd1y8" target="_blank"><h2>Shibli Boys <br> Hostel</h2></a> 
+          <h3>Delhi</h3>
+          
+      </div>
+    </div>
+    <div class="brancol">
+   <img src="images/samanayulu.png" alt="">
+      <div class="layer">
+        <a href="https://maps.app.goo.gl/HwoMTUyx5GrxDmaU8" target="_blank"><h2>Samanyolu Boys <br> Hostel</h2></a>
+          <h3>Hydrabad</h3>
+      </div>
+    </div>
+    <div class="brancol">
+      <a href=""> <img src="images/spring girls.png" alt=""></a>
+       <div class="layer">
+           <a href="https://maps.app.goo.gl/zhdWjPoxxAJLcRRq5"><h2>Spring Girls <br> Hostel</h2></a>
+           <h3>Delhi</h3>
+       </div>
+     </div>
+  </div>
+
+</section>
+<!-- branches end -->
+
+<!-- Testimonial start -->
+<section class="testimonial" id="testimonial">
+  <h1>Testimonial</h1>
+  <div class="review">
+    <div class='sk-ww-google-reviews' data-embed-id='209882'></div><script src='https://widgets.sociablekit.com/google-reviews/widget.js' async defer></script>
+</div>
+</section>
+<!-- ...........testimonial close....... -->
+<!-- about start -->
+<section class="about">
+  <h1>About us</h1>
+  <p>Welcome to <strong>Spring Boys Hostel</strong>,  Family Away From Family  in <strong>Pune-Maharashtra.411002.</strong> We're more than just a place to stay.
+    We are delighted to welcome you to the Spring Boys Hostel. This hostel is part of our various hostel’s in India , which is built on the core idea for giving best facilities and environment with many daily life memories.We provide different facilities like laundry,ironing,wifi,neat and clean room with daily cleaning. 
+    Our mission is to give you the space like you feel for studying your various course.For more information you can directly connect to our contacts mentioned.
+
+  </p>
+</section>
+<!--.................. about close ......... -->
+
+<!-- ........footer start...........  -->
+<section class="footer">
+<div class="icon">
+  
+  <a href="https://www.instagram.com/spring_boys_hostel/"><i class="fa fa-instagram" id="instagram" ></i></a>
+  <a href="https://api.whatsapp.com/send?phone=918600959459&text=Hii" target="_blank"><i class="fa fa-whatsapp" id="whatsapp"></i></a>
+  <a href="tel:8600959459"><i class="fa fa-phone" id="phone"></i></a>
+ 
+  <div class="copy">
+     
+    <p><i class="fa fa-copyright"></i>copy right <b>Spring Boys Hostel</p></p>
+    </div>
+    
+</div>
+</section>
+<!-- ........footer close...........  -->
+
    
-}
-.brancol img{
- 
-   width: 100%;
- 
-}
-.brancol:hover{
-   transform: scale(1.1);
-}
-.layer{
-  
-   background: transparent;
-   height:100%;
-   width: 100%;
-   position: absolute;
-   top: 0;
-   left: 0;
-   transition: 0.5s;
-}
-.layer:hover{
-   background: rgba(3, 212, 212, 0.448);
-}
-.layer  h3{
-   text-align: center;
-   width: 100%;
-   font-weight: 500;
-   color: #fff;
-   font-size: 26px;
-   bottom: 0;
-   left: 50%;
-   transform: translateX(-50%);
-   position: absolute;
-   opacity: 0;
-   transition: 0.5s;
-  
-}
-.layer  h2{
-   text-align: center;
-   width: 100%;
-   font-weight: 500;
-   color: #fff;
-   font-size: 40px;
-   bottom: 0;
-   left: 50%;
-   transform: translateX(-50%);
-   position: absolute;
-   opacity: 0;
-   transition: 0.5s;
-   cursor: pointer;
-}
-.layer:hover  h3{
-bottom: 49%;
-opacity: 1;
-}
-.layer:hover  h2{
-   bottom: 60%;
-   opacity: 1;
-   }
-   /* tesmonial start */
-   .testimonial{
-        width: 100%;
-        margin: auto;
-        padding-top: 30px;
-        text-align: center;
-      
-   }
-   .review{
-      margin: 2%;
-      display: flex;
-      justify-content: space-between 
-   }
-   /* about start  */
-   .about{
-      align-items: center;
-      width: 90%;
-      padding-top: 30px;
-      margin-top: 30px;
-      text-align: center;
-      margin-left: auto;
-      margin-right: auto;
+  <!-- ---java script for toggle menu------ -->
+<script>
+  var navlinks = document.getElementById("navlinks");
+
+  function showMenu(){
+    navlinks.style.left="0";
+
   }
+  function hideMenu(){
+    navlinks.style.left="-300px";
 
-      
+  }
+</script>
 
    
-
-   .about p{
-      margin-top: 30px;
-      margin-bottom: 30px;
-      font-size: 20px;
-      
-   }
-   /* about end  */
-   /* footer */
-   .footer{
-      
-      margin-top: 12px;
-     background-color:#d7e2e1e0;
-     text-align: center;
-   }
-   .footer .fa{
-      color: #000;
-      margin: 0 18px;
-     padding: 18px 0;
-     padding-bottom: 20px;
-      font-weight: bold;
-      font-size: 24px;
-      justify-content: space-between;
-      
-   }
-      .footer .fa:hover{
-         color: #28A58D;
-      }
-      .icon{
-         padding-top: 20px;
-      }
-
-     .copy .fa{
-      font-size: 15px;
-      margin-left: 20px;
-      text-decoration: none;
-     
-      
-   }
-   .copy .fa:hover{
-       color: black;
-      }
-     
-     b{
-      color: #28A58D;
-     }
-   .copy{
-      text-align: center;
-      font-size: 20px;
-   } 
-   
-  
-     
-    /* ----------contact page--------  */
-    .contact h1{
-     text-align: center;
-     margin-top: 150px;
-    }
-.location{
-   width: 80%;
-   margin: auto;
-   padding: 80px 0;
-}
-.location iframe{
-   width: 100%;
-}
-.contact-us{
-width: 80%;
-margin: auto;
-}
-.contact-col{
-   flex-basis: 48%;
-   margin-bottom: 30px;
-
-}
-.contact-col div{
-   display: flex;
-   align-items: center;
-   margin-bottom: 40px;
-}
-.contact-col .fa{
-   font-size: 28px;
-   color: #28A58D;
-   margin: 10px;
-   margin-right: 30px;
-}
-
-
-.contact-col div p{
-   padding: 0;
-}
-.contact-col div h5{
-font-size: 15px;
-margin-bottom: 5px;
-color: #45505b;
-font-weight: 600;
-}
-.contact-col input, textarea{
-   width: 100%;
-   padding: 15px;
-   margin-top: 17px;
-   outline: none;
-   border: 1px solid #d7e2e1e0 ;
-   box-sizing: border-box;
-}
-.btn{
-  padding: 15px;
-  background-color: #28A58D;
-  color: #fff;
-  font-size: 18px;
-  border: 0;
-  outline: none;
-  cursor: pointer;
-  width: 150px;
-  margin: 20px auto 0;
-  border-radius: 30px;
-}
-.btn:hover{
-   box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
-
-}
-
+</body>
+</html>
