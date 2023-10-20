@@ -3,6 +3,7 @@
    padding: 0;
    font-family: 'Lora', serif;
    
+   
 
 }
 
@@ -92,6 +93,41 @@ nav .fa{
 
 
 
+/* facilities start  */
+
+
+  .facilities{
+
+   width: 100%;
+   margin: auto;
+  text-align: center;
+   padding-top: 30px;
+ 
+}
+
+
+.faccol{
+   flex-basis: 13%;
+   border-radius: 10px;
+   margin-bottom: 15px;
+   text-align: left;
+
+}
+.faccol img{
+   width: 100%;
+   border-radius: 10px;
+   cursor: pointer;
+}
+
+.faccol img:hover {
+   transform: scale(1.1); 
+ }
+
+
+/* facilities end  */
+
+
+/* tablet media query  */
   @media (max-width:1200px){
    .textbox h1{
       font-size: 24px;
@@ -155,8 +191,11 @@ nav .fa{
 
 
 
+/* tablet media query end  */
 
-  
+
+
+  /* mobile media query start  */
 
 @media  (max-width:700px){
    .textbox h1{
@@ -218,6 +257,8 @@ nav .fa{
       text-align: center;
    }
 }
+/* monile media query end  */
+
 /* .........prefrence........... */
 .Prefrence{
 
@@ -371,7 +412,11 @@ opacity: 1;
       font-weight: bold;
       
    }
-   .about p{
+   .about span{
+      box-sizing: border-box;
+      font-size: 18px;
+      margin-left: 30px;
+      margin-right: 30px;
       margin-top: 10px;
       margin-bottom: 10px;
       padding-top: 20px;
@@ -458,6 +503,8 @@ margin: auto;
    margin: 10px;
    margin-right: 30px;
 }
+
+
 .contact-col div p{
    padding: 0;
 }
@@ -487,4 +534,7 @@ font-weight: 600;
   margin: 20px auto 0;
   border-radius: 30px;
 }
+.btn:hover{
+   box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
 
+}
