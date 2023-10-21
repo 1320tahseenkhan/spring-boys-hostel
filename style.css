@@ -15,7 +15,7 @@ h1{
    position: relative;
    font-family: "Raleway", sans-serif;
    color: #45505b;
-
+   
    
  }
  /* end  */
@@ -204,7 +204,7 @@ nav .fa{
    }
    /* this is for prefrence */
    .row{
-      flex-direction:row;
+      flex-direction:column;
    }
 
    .about p{
@@ -552,7 +552,7 @@ opacity: 1;
    width: 100%;
 }
 .contact-us{
-width: 80%;
+width: 85%;
 margin: auto;
 }
 .contact-col{
@@ -577,13 +577,13 @@ margin: auto;
    padding: 0;
 }
 .contact-col div h5{
-font-size: 15px;
+font-size: 22px;
 margin-bottom: 5px;
 color: #45505b;
-font-weight: 600;
+font-weight: 400;
 }
 .contact-col input, textarea{
-   width: 95%;
+   width: 100%;
    padding: 15px;
    margin-top: 15px;
    margin-left: 15px;
@@ -598,6 +598,9 @@ font-weight: 600;
    border: #d7e2e1e0 solid;
    border-radius: 10px;
    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+  padding-right: 30px;
+
+   
  
 }
 .btn{
