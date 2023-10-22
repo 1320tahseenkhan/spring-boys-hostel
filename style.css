@@ -82,6 +82,7 @@ nav img{
 nav .fa{
    display: none;
 }
+/* navbar end */
 .textbox{
    width: 90%;
    color:#fff;
@@ -458,6 +459,7 @@ opacity: 1;
         margin: auto;
         padding-top: 30px;
         text-align: center;
+        text-decoration: none;
       
    }
    .review{
@@ -482,10 +484,11 @@ opacity: 1;
    
 
    .about p{
-      font-family: cursive;
+      
       margin-top: 30px;
       margin-bottom: 30px;
       font-size: 20px;
+      font-family:200;
       
    }
    /* about end  */
@@ -535,10 +538,6 @@ opacity: 1;
   
      
     /* ----------contact page--------  */
-
-
-
-    
     .contact h1{
      text-align: center;
      margin-top: 150px;
@@ -552,18 +551,18 @@ opacity: 1;
    width: 100%;
 }
 .contact-us{
-width: 85%;
+width: 90%;
 margin: auto;
 }
 .contact-col{
-   flex-basis: 48%;
+   flex-basis: 49%;
    margin-bottom: 30px;
 
 }
 .contact-col div{
    display: flex;
    align-items: center;
-   margin-bottom: 40px;
+   margin-bottom: 48px;
 }
 .contact-col .fa{
    font-size: 28px;
@@ -583,26 +582,18 @@ color: #45505b;
 font-weight: 400;
 }
 .contact-col input, textarea{
-   width: 100%;
-   padding: 15px;
-   margin-top: 15px;
-   margin-left: 15px;
-   margin-bottom: 15px;
-   margin-right: 15px;
-
-   outline: none;
+   width: 90%;
+   padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  margin-left: 20px;
+   
    border: 1px solid #d7e2e1e0 ;
    box-sizing: border-box;
 }
-#form{
-   border: #d7e2e1e0 solid;
-   border-radius: 10px;
-   box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
-  padding-right: 30px;
 
-   
- 
-}
+
 .btn{
   padding: 10px;
   background-color: #28A58D;
