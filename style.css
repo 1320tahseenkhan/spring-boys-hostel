@@ -551,7 +551,7 @@ opacity: 1;
    width: 100%;
 }
 .contact-us{
-width: 90%;
+width: 80%;
 margin: auto;
 }
 .contact-col{
@@ -596,7 +596,7 @@ font-weight: 400;
 form{
    box-sizing: border-box;
    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
-   box-radius:10px
+   box-radius:10px;
 }
 
 .btn{
