@@ -576,27 +576,25 @@ margin: auto;
    padding: 0;
 }
 .contact-col div h5{
-font-size: 22px;
+font-size: 20px;
 margin-bottom: 5px;
 color: #45505b;
 font-weight: 400;
 }
 .contact-col input, textarea{
-  width: 90%;
-   padding: 10px;
+  width: 95%;
+ padding: 10px;
   margin-top: 15px;
   margin-bottom: 15px;
   margin-right: 15px;
   margin-left: 15px;
-  overflow:auto;
-   
-   border: 1px solid #d7e2e1e0 ;
-   box-sizing: border-box;
+  border: 1px solid #d7e2e1e0 ;
+  box-sizing: border-box;
 }
 form{
    box-sizing: border-box;
    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
-   box-radius:10px;
+   border-radius: 10px;
 }
 
 .btn{
@@ -608,7 +606,7 @@ form{
   outline: none;
   cursor: pointer;
   width: 150px;
-  margin: 20px 50px;
+  margin: 20px 20px;
   border-radius: 30px;
   
 }
