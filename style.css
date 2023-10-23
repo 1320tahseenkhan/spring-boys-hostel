@@ -499,7 +499,7 @@ opacity: 1;
      background-color:#d7e2e1e0;
      text-align: center;
    }
-   .footer .fa{
+   .footer .fa-brands{
       color: #000;
       margin: 0 18px;
      padding: 18px 0;
@@ -509,9 +509,22 @@ opacity: 1;
       justify-content: space-between;
       
    }
+   .footer .fa{
+      color: #000;
+      margin: 0 18px;
+     padding: 18px 0;
+     padding-bottom: 20px;
+      font-weight: bold;
+      font-size: 24px;
+      justify-content: space-between;
+   }
       .footer .fa:hover{
          color: #28A58D;
       }
+      .footer .fa-brands:hover{
+         color: #28A58D;
+      }
+      
       .icon{
          padding-top: 20px;
       }
@@ -542,6 +555,8 @@ opacity: 1;
      text-align: center;
      margin-top: 150px;
     }
+
+    /* location  */
 .location{
    width: 80%;
    margin: auto;
@@ -550,10 +565,13 @@ opacity: 1;
 .location iframe{
    width: 100%;
 }
+
+/* contact us  */
 .contact-us{
 width: 80%;
 margin: auto;
 }
+
 .contact-col{
    flex-basis: 48%;
    margin-bottom: 30px;
@@ -592,6 +610,7 @@ font-weight: 300;
 }
 
 
+
 .btn{
   padding: 10px;
   background-color: #28A58D;
@@ -610,5 +629,72 @@ font-weight: 300;
 
 }
 
+/* contact footer  */
 
 
+.confooter{
+      
+   margin-top: 12px;
+  background-color:#d7e2e1e0;
+  text-align: center;
+}
+
+.confooter .fa{
+   
+      color: #000;
+      margin: 0 18px;
+     padding: 18px 0;
+     padding-bottom: 20px;
+      font-weight: bold;
+      font-size: 20px;
+      justify-content: space-between;
+  
+}
+
+.confooter .fa-brands{
+   color: #000;
+   margin: 0 18px;
+  padding: 18px 0;
+  padding-bottom: 20px;
+   font-weight: bold;
+   font-size: 24px;
+   justify-content: space-between;
+   
+}
+.confooter .fa:hover{
+   color: #28A58D;
+}
+.confooter .fa-brands:hover{
+   color: #28A58D;
+}
+
+.concopy .fa{
+   font-size: 15px;
+   margin-left: 20px;
+   text-decoration: none;
+  
+   
+}
+.concopy .fa:hover{
+    color: black;
+   }
+  
+  b{
+   color: #28A58D;
+  }
+.concopy{
+   text-align: center;
+   font-size: 20px;
+} 
+
+
+
+
+
+/* thank you page  */
+.thank h1{
+   text-align: center;
+   align-items: center;
+   margin-top: 25%;
+   margin-bottom: 25%;
+}
