@@ -660,10 +660,11 @@ font-weight: 300;
 
 
 .confooter{
-      
+    width:100%;  
    margin-top: 12px;
   background-color:#d7e2e1e0;
   text-align: center;
+   
 }
 
 .confooter .fa{
