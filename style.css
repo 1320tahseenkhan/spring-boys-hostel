@@ -337,6 +337,14 @@ nav .fa{
       margin-right: 20px;
 
    }
+
+
+   
+.contact-col div p{
+   font-size: 15px;
+   padding: 0;
+   margin: 10px;
+}
 }
 /* monile media query end  */
 
