@@ -345,6 +345,9 @@ nav .fa{
    padding: 0;
    margin: 10px;
 }
+   .conrow{
+   flex-direction: column;
+}
 }
 /* monile media query end  */
 
@@ -580,6 +583,12 @@ opacity: 1;
 width: 80%;
 margin: auto;
 }
+.conrow{
+   margin: 5%;
+   display: flex;
+   justify-content: space-between ;
+}
+
 
 .contact-col{
    flex-basis: 48%;
