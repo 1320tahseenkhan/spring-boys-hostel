@@ -631,12 +631,12 @@ font-weight: 300;
   box-sizing: border-box;
 }
 
-/* form{
+form{
    border: 0.1rem solid #f0f0f0;
    padding: 1rem 2rem;
    box-shadow:  0 0 20px 0px rgba(0, 0, 0, 0.2);
    border-radius: 10px;
-} */
+}
 
 .btn{
   padding: 10px;
