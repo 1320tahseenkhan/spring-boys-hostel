@@ -573,8 +573,9 @@ margin: auto;
 }
 
 .contact-col{
-   flex-basis: 48%;
+   flex-basis: 40%;
    margin-bottom: 30px;
+   box-sizing: border-box;
 
 }
 .contact-col div{
