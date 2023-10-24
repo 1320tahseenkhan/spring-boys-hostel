@@ -154,13 +154,13 @@ nav .fa{
 /* tablet media query  */
   @media (max-width:1200px){
    .textbox h1{
-      font-size: 24px;
+      font-size: 30px;
       color: #6BE8D0;
       text-align: center;
 
    }
    .textbox p{
-      font-size: 15px;
+      font-size: 20px;
       color:white;
       text-align: center;
    }
@@ -198,7 +198,7 @@ nav .fa{
        margin-left:auto ;
    }
    h1{
-      font-size: 20px;
+      font-size: 30px;
    }
    .navlinks ul{
       padding: 30px;
@@ -236,11 +236,22 @@ nav .fa{
 
    }
    .layer:hover  h3{
-      font-size: 15px;
+      font-size: 25px;
       }
       .layer:hover  h2{
-         font-size: 20px;
+         font-size: 30px;
          }
+         
+
+         .contact-col div p{
+            font-size: 15px;
+            padding: 0;
+            margin: 10px;
+         }
+            .conrow{
+            flex-direction: column;
+         }
+             
   
 }
 
@@ -348,8 +359,49 @@ nav .fa{
    .conrow{
    flex-direction: column;
 }
+
+
 }
 /* monile media query end  */
+
+/* gallery start  */
+
+.Gallery{
+      
+   align-items: center;
+   width: 80%;
+   margin-bottom: 12px;
+   text-align: center;
+  margin: auto;
+}
+.Gallery h1{
+   margin-bottom: 30px;
+}
+
+.galcontainer{
+   width: 100%;
+
+   min-height: 100vh;
+   display: grid;
+   align-items: center;
+   justify-content: center;
+   /* padding: auto; */
+  
+}
+.gallery{
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+   grid-gap: 20px;
+
+}
+.gallery img{
+   width: 100%;
+}
+
+
+
+/* gallery end  */
+
 
 /* .........prefrence........... */
 .Prefrence{
@@ -386,9 +438,14 @@ h3{
 .pre-Col:hover{
    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
 }
-li{
+ul{
    list-style: none;
+   display: inline-block;
    text-align: center;
+   word-wrap: break-word;
+}
+li{
+   text-decoration: none;
 }
 /* ........our branches........ */
 .ourbranches{
@@ -650,6 +707,7 @@ form{
   margin: 20px 20px;
   border-radius: 30px;
   
+  
 }
 .btn:hover{
    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
@@ -720,9 +778,46 @@ form{
 
 
 /* thank you page  */
-.thank h1{
-   text-align: center;
-   align-items: center;
-   margin-top: 25%;
-   margin-bottom: 25%;
+
+
+
+.thank{
+  
+   width: max-content;
+   display: grid;
+   box-shadow:0 0 20px 0px rgba(0, 0, 0, 0.2); ;
+   border-radius: 10px;
+    text-align: center;
+    padding: 50px;
+ align-items: center;
+margin: 50px auto 50px auto;
+  
 }
+
+.thank .fa{
+   font-size: 150px;
+   color: #28A58D;
+}
+.thank h1{
+   margin: 30px auto 0 auto;
+  
+}
+.thank a{
+   text-decoration: none;
+}
+.thank h2{
+   margin-top: 30%;
+   font-size:20px;
+   border: #FFFFFF solid;
+   background-color: #28A58D;
+   border-radius: 10px;
+   text-decoration: none;
+   color: #fff;
+}
+.thank h2:hover{
+  
+background-color: #28A58D;
+box-shadow:0 0 20px 0px rgba(0, 0, 0, 0.2);
+cursor: pointer;
+}
+
