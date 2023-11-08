@@ -1,10 +1,13 @@
 *{
    margin: 0;
    padding: 0;
-   font-family: 'Lora', serif;
-   
-   
-
+   font-family:'arial';
+}
+body::-webkit-scrollbar{
+   background-color: transparent;
+}
+body::-webkit-scrollbar-thumb{
+   background-color: #28A58D;
 }
 
 /* this is for all h1 tag  */
@@ -94,10 +97,12 @@ nav .fa{
   .textbox h1{
      font-size: 62px;
      color: #6BE8D0;
+     letter-spacing: 0.3rem;
   }
   .textbox p{
      margin: 10px  40px;
-     font-size: 25px;
+     font-size: 30px;
+     letter-spacing: 0.1rem;
      color: #fff;
   }
 
@@ -314,6 +319,7 @@ bottom: 0;
       left: -300px;
       text-align: left;
       z-index: 2;
+      transition: 0.8s;
       
    }
   
@@ -844,15 +850,12 @@ form{
 }
 
 .btn{
-   padding: 15px 20px;
-    border-radius: 4px;
-  background-color: #28A58D;
-  color: #fff;
-  font-size: 18px;
-  border: 0;
-  outline: none;
-  cursor: pointer;
-  width: 150px;  
+   background: #28A58D;
+   border: 0;
+   padding: 10px 35px;
+   color: #fff;
+   transition: 0.4s;
+   border-radius: 30px;
 }
 .btn:hover{
    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
